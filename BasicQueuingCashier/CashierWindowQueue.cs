@@ -14,6 +14,7 @@ namespace BasicQueuingCashier
 {
     public partial class CashierWindowQueue : Form
     {
+        Timer timer = new Timer();
         private object obj;
 
         public CashierWindowQueue()

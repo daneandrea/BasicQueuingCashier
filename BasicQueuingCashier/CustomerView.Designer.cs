@@ -28,29 +28,29 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lblNowServ = new System.Windows.Forms.Label();
+            this.lblQueuing = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // lblNowServ
+            // lblQueuing
             // 
-            this.lblNowServ.AutoSize = true;
-            this.lblNowServ.Font = new System.Drawing.Font("Franklin Gothic Medium", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNowServ.Location = new System.Drawing.Point(93, 40);
-            this.lblNowServ.Name = "lblNowServ";
-            this.lblNowServ.Size = new System.Drawing.Size(135, 26);
-            this.lblNowServ.TabIndex = 0;
-            this.lblNowServ.Text = "*Now Serving";
+            this.lblQueuing.AutoSize = true;
+            this.lblQueuing.Font = new System.Drawing.Font("Franklin Gothic Demi", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblQueuing.Location = new System.Drawing.Point(96, 139);
+            this.lblQueuing.Name = "lblQueuing";
+            this.lblQueuing.Size = new System.Drawing.Size(27, 30);
+            this.lblQueuing.TabIndex = 0;
+            this.lblQueuing.Text = "*";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Franklin Gothic Demi", 20.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(96, 124);
+            this.label2.Font = new System.Drawing.Font("Franklin Gothic Medium", 20.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(81, 30);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(132, 34);
+            this.label2.Size = new System.Drawing.Size(175, 34);
             this.label2.TabIndex = 1;
-            this.label2.Text = "P - 10003";
+            this.label2.Text = "*Now Serving";
             // 
             // CustomerView
             // 
@@ -59,7 +59,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(232)))), ((int)(((byte)(205)))));
             this.ClientSize = new System.Drawing.Size(340, 261);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.lblNowServ);
+            this.Controls.Add(this.lblQueuing);
             this.Name = "CustomerView";
             this.Text = "CustomerView";
             this.Load += new System.EventHandler(this.CustomerView_Load);
@@ -70,7 +70,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Label lblNowServ;
+        private System.Windows.Forms.Label lblQueuing;
         private System.Windows.Forms.Label label2;
     }
 }

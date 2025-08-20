@@ -24,7 +24,7 @@ namespace BasicQueuingCashier
         private void Update(object sender, EventArgs e)
         {
             Queue<string> queue = CashierClass.CashierQueue;
-            lblNowServ.Text = queue.Count > 0 ? queue.Peek() : "";
+            lblQueuing.Text = queue.Count > 0 ? queue.Peek() : "";
         }
 
         private void CustomerView_Load(object sender, EventArgs e)
